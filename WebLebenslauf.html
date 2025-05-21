@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jiwan Osman – Portfolio</title>
+  <style>
+    :root {
+      --main: #2c3e50;
+      --accent: #3498db;
+      --light: #f4f4f4;
+      --white: #fff;
+      --shadow: 0 4px 8px rgba(0,0,0,0.1);
+      --radius: 12px;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: var(--light);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--main);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    header h1 {
+      margin-bottom: 5px;
+      font-size: 2.8em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+    
+    .image-container {
+        text-align: right;
+        margin-top: 20px;
+        }
+
+        .image-container img {
+        max-width: 200px; 
+        border-radius: var(--radius); 
+        }
+
+
+    nav {
+      background: var(--accent);
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: var(--white);
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    h2 {
+      color: var(--main);
+      margin-top: 0;
+      border-left: 5px solid var(--accent);
+      padding-left: 10px;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+
+    .grid > div {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: var(--radius);
+      border: 1px solid #ccc;
+      font-family: inherit;
+      font-size: 1em;
+    }
+
+    form button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: #2980b9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      color: #666;
+      margin-top: 40px;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2em; }
+      nav a { display: block; margin: 10px 0; }
+    }
+  </style>
+</head>
+<body>
+
+    <header>
+    <h1>Jiwan Osman</h1>
+    <p>💻 Softwareentwickler aus Berlin – spezialisiert auf C#, Python & Web</p>
+    <div class="image-container">
+        <img src="/Bilder/Bild.png" alt="Jiwan Osman Portrait">
+    </div>
+    </header>
+
+
+  <nav>
+    <a href="#ueber">Über mich</a>
+    <a href="#beruf">Beruf</a>
+    <a href="#weiterbildung">IT & Weiterbildung</a>
+    <a href="#sprachen">Sprachen</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <main>
+
+    <section id="ueber">
+      <h2>👤 Über mich</h2>
+      <div class="grid">
+        <div><strong>Geburtsdatum:</strong><br>28.01.1989, Amouda (Syrien)</div>
+        <div><strong>Adresse:</strong><br>Onkel-Tom-Straße 103, 14169 Berlin</div>
+        <div><strong>Telefon:</strong><br>+49 177 692 3124</div>
+        <div><strong>E-Mail:</strong><br>Jwano45@gmail.com</div>
+      </div>
+    </section>
+
+    <section id="beruf">
+      <h2>🏗️ Berufserfahrung</h2>
+      <ul>
+        <li>05/2022–10/2023: Sabbatical / Private Familienunterstützung</li>
+        <li>09/2021–05/2022: Projektmanagement Bau – KVL Bauconsult GmbH</li>
+        <li>06/2021–08/2021: Zeichner – Scarraplan Architecture Firm</li>
+        <li>06/2020–01/2021: Zeichner – Architekturatelier Romy Hornschuh</li>
+        <li>08/2017–06/2020: Bauzeichner – R&P Ruffert Ingenieurbüro</li>
+      </ul>
+    </section>
+
+    <section id="weiterbildung">
+      <h2>🎓 IT-Kenntnisse & Weiterbildungen</h2>
+      <ul>
+        <li>02/2025: C# Zertifizierung – IBB</li>
+        <li>10/2024: Python (PCAP) – Comcave</li>
+        <li>08/2024: Python (PCEP) – Comcave</li>
+        <li>06/2024: Java Developer (Oracle) – Comcave</li>
+        <li>02/2024: PHP I & II – Comcave</li>
+        <li>12/2023: HTML & CSS – Comcave</li>
+      </ul>
+      <p><strong>Tools & Sprachen:</strong> HTML, CSS, PHP, Java, Python, C#, AutoCAD, Allplan, MS Office</p>
+    </section>
+
+    <section id="sprachen">
+      <h2>🌍 Sprachen</h2>
+      <div class="grid">
+        <div>🇩🇪 Deutsch – C1</div>
+        <div>🇬🇧 Englisch – gut</div>
+        <div>🇸🇾 Arabisch – Muttersprache</div>
+        <div>🇹🇷 Türkisch – Mittelstufe</div>
+        <div>🇰🇷 Kurdisch – Muttersprache</div>
+      </div>
+    </section>
+
+    <section id="kontakt">
+      <h2>📬 Kontaktformular</h2>
+      <form>
+        <input type="text" placeholder="Dein Name">
+        <input type="email" placeholder="Deine E-Mail">
+        <textarea rows="5" placeholder="Deine Nachricht..."></textarea>
+        <button type="submit">Senden</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Jiwan Osman – Mit ❤️ gemacht in HTML & CSS
+  </footer>
+
+</body>
+</html>
